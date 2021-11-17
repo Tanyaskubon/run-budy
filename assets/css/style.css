@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
+
 * {
     margin: 0;
     padding: 0%;
@@ -24,6 +31,7 @@ background-image: url("../images/hero-bg.jpg");
 background-size:cover;
 background-position: 80%;
 background-attachment: fixed;
+z-index: 9999;
 }
 
 
@@ -94,7 +102,7 @@ footer div {
 background-image: url("../images/hero-bg.jpg");
 display: flex;
 background-size: cover;
-background-position: 80;
+background-position: 80%;
 justify-content: center;
 flex-wrap: wrap;
 align-items: flex-start;
@@ -229,6 +237,30 @@ background-attachment: fixed;
     border-color: #39a6b2;
     margin: 0 auto 35px auto;
   }
+  .checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);  
+    border: 1px solid #024e76;  
+    position: absolute;
+    top: -4px;
+    left: -30px;
+  }
+  .radio-wrapper label::before {
+    border-radius: 50%;
+  }
+  .checkbox-wrapper label::after {
+    transform: rotate(-58deg);
+  }
+
+  .checkbox-wrapper input:checked + label::after, .radio-wrapper  
+  inputlabel::after {
+    content: none;
+  }
+  .checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
 
   
 
