@@ -261,12 +261,13 @@ background-attachment: fixed;
   .checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
+}
 
   
 
   
   
-  .section-title {
+    .section-title {
     font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
